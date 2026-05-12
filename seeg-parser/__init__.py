@@ -1,0 +1,1 @@
+from .core import trc2bids

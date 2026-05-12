@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "seeg-parser"
+version = "0.1.0"
+description = "Parser of stereotactic electroencephalography (SEEG) recordings from equipment-specific formats to universal formats."
+readme = "README.md"
+requires-python = ">=3.10"
+
+dependencies = [
+    "numpy",
+    "pandas",
+    "mne",
+    "mne-bids",
+    "wonambi"
+]
+
+authors = [
+    {name = "Marc"}
+]

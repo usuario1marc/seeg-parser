@@ -8,7 +8,7 @@ import wonambi
 
 from mne_bids import BIDSPath, write_raw_bids
 
-import montage as mount
+from . import montage as mount
 
 def trc2bids(
     trc_filepath:str,
@@ -279,8 +279,12 @@ def trc2bids(
     channels_df.to_csv(channels_file.fpath, sep="\t", index=False)
 
 
+# =========================================================
+# EXAMPLE USAGE
+# =========================================================
+
 if __name__ == '__main__':
-    import inspectfile as inspect
+    import inspection
 
     patient_id = "<patient_id>"
 
@@ -288,6 +292,6 @@ if __name__ == '__main__':
     bids_filepath = r"<bids_root>"
     channels_filepath = r"<channels_config_root>.json"
 
-    inspect.trcinfo(trc_filepath)
+    inspection.trcinfo(trc_filepath)
     trc2bids(trc_filepath, bids_filepath, channels_filepath, patient_id, "cceps")
-    inspect.bidsview(bids_filepath, patient_id)
+    inspection.bidsview(bids_filepath, patient_id)
