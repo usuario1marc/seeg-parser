@@ -1,0 +1,197 @@
+{
+    "A": {
+        "type": "seeg",
+        "name": "Amígdala",
+        "area": "wernicke"
+    },
+    "AL": {
+        "type": "seeg",
+        "name": "Anterior Lesión",
+        "area": "wernicke"
+    },
+    "AMP": {
+        "type": "seeg",
+        "name": "Área Motora Primaria",
+        "area": "none"
+    },
+    "ASP": {
+        "type": "seeg",
+        "name": "Área Sensitiva Primaria",
+        "area": "none"
+    },
+    "BIA": {
+        "type": "seeg",
+        "name": "Broca Ínsula Anterior",
+        "area": "broca"
+    },
+    "FO": {
+        "type": "seeg",
+        "name": "Fronto Orbitario",
+        "area": "broca"
+    },
+    "GAC": {
+        "type": "seeg",
+        "name": "Giro Anterior a Cíngulo",
+        "area": "none"
+    },
+    "GSM": {
+        "type": "seeg",
+        "name": "Giro Supra Marginal",
+        "area": "none"
+    },
+    "H": {
+        "type": "seeg",
+        "name": "Hipocampo",
+        "area": "wernicke"
+    },
+    "HA": {
+        "type": "seeg",
+        "name": "Hipocampo Anterior",
+        "area": "wernicke"
+    },
+    "HP": {
+        "type": "seeg",
+        "name": "Hipocampo Posterior",
+        "area": "wernicke"
+    },
+    "IAMO": {
+        "type": "seeg",
+        "name": "Ínsula Anterior Medio Oblicuo",
+        "area": "broca"
+    },
+    "IAO": {
+        "type": "seeg",
+        "name": "Ínsula Anterior Oblicuo",
+        "area": "broca"
+    },
+    "IMO": {
+        "type": "seeg",
+        "name": "Ínsula Medial Oblicuo",
+        "area": "broca"
+    },
+    "IPO": {
+        "type": "seeg",
+        "name": "Ínsula Posterior Oblicuo",
+        "area": "broca"
+    },
+    "LIP": {
+        "type": "seeg",
+        "name": "Lesión Ínsula Posterior",
+        "area": "broca"
+    },
+    "OIM": {
+        "type": "seeg",
+        "name": "Opérculo Mano-Ínsula Superior Media",
+        "area": "broca"
+    },
+    "OIP": {
+        "type": "seeg",
+        "name": "Opérculo Ínsula Posterior",
+        "area": "broca"
+    },
+    "OIS": {
+        "type": "seeg",
+        "name": "Opérculo Ínsula Superior",
+        "area": "broca"
+    },
+    "PS": {
+        "type": "seeg",
+        "name": "Parietal Superior",
+        "area": "none"
+    },
+    "PT": {
+        "type": "seeg",
+        "name": "Polo Temporal",
+        "area": "wernicke"
+    },
+    "SIM": {
+        "type": "seeg",
+        "name": "Suplementaria Opercular a Ínsula Media",
+        "area": "none"
+    },
+    "SMA": {
+        "type": "seeg",
+        "name": "Área Motora Suplementaria",
+        "area": "none"
+    },
+    "T2O": {
+        "type": "seeg",
+        "name": "Temporal 2 Occipital",
+        "area": "wernicke"
+    },
+    "TBA": {
+        "type": "seeg",
+        "name": "Temporal Basal Anterior",
+        "area": "wernicke"
+    },
+    "TBM": {
+        "type": "seeg",
+        "name": "Temporal Basal Medio",
+        "area": "wernicke"
+    },
+    "TBO": {
+        "type": "seeg",
+        "name": "Temporal Basal Occipital",
+        "area": "wernicke"
+    },
+    "TBP": {
+        "type": "seeg",
+        "name": "Temporal Basal Posterior",
+        "area": "wernicke"
+    },
+    "TIA": {
+        "type": "seeg",
+        "name": "Temporal Ínsula Anterior",
+        "area": "wernicke"
+    },
+    "TIAA": {
+        "type": "seeg",
+        "name": "Temporal Anterior Ínsula Anterior Amígdala",
+        "area": "wernicke"
+    },
+    "TIM": {
+        "type": "seeg",
+        "name": "Temporal Ínsula Media",
+        "area": "wernicke"
+    },
+    "TIP": {
+        "type": "seeg",
+        "name": "Temporal Ínsula Posterior",
+        "area": "wernicke"
+    },
+    "TOB": {
+        "type": "seeg",
+        "name": "Temporo Occipital Basal",
+        "area": "wernicke"
+    },
+    "TOI": {
+        "type": "seeg",
+        "name": "Temporo Occipital Inferior",
+        "area": "wernicke"
+    },
+    "TOM": {
+        "type": "seeg",
+        "name": "Temporo Occipital Medio",
+        "area": "wernicke"
+    },
+    "TOS": {
+        "type": "seeg",
+        "name": "Temporo Occipital Superior",
+        "area": "wernicke"
+    },
+    "TP": {
+        "type": "seeg",
+        "name": "Temporal Posterior",
+        "area": "wernicke"
+    },
+    "WC": {
+        "type": "seeg",
+        "name": "Wernicke",
+        "area": "wernicke"
+    },
+    "WCP": {
+        "type": "seeg",
+        "name": "Wernicke Cíngulo Posterior",
+        "area": "wernicke"
+    }
+}

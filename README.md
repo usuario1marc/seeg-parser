@@ -14,6 +14,10 @@ Built around:
 - Monopolar and bipolar referencing
 - Interactive visualization helpers
 
+## Notes
+
+This package was developed primarily for stimulation recordings from Micromed systems and may require adaptation for other acquisition setups.
+
 ---
 
 ## Installation
@@ -22,12 +26,14 @@ Built around:
 git clone https://github.com/usuario1marc/seeg-parser.git
 cd seeg-parser
 
-pip install -e .
+python -m pip install -e .
 ```
 
 ---
 
 ## Basic usage
+
+The main function of the package can be used with the following syntax:
 
 ```python
 from seeg_parser import trc2bids
@@ -35,54 +41,64 @@ from seeg_parser import trc2bids
 trc2bids(
     trc_filepath="patient01.TRC",
     bids_filepath="bids_dataset/",
-    channels_filepath="channels.json",
-    subject="patient01"
+    channels_filepath="config/channels.json",
+    subject="01"
 )
 ```
+
+An `example.py` file is provided in the `examples` folder. It consists of a script for parsing a dataset of `.TRC` SEEG recordings into the BIDS format.
+
+The script expects the input directory to contain a set of folders. Each folder should be named with the subject BIDS ID.
+Inside each patient folder, there should be the raw `.TRC` files.
+
+The script iterates through all patient folders and through all `.TRC` files inside each folder, parsing them and adding them
+to the provided output BIDS dataset.
 
 ---
 
 ## Channel configuration
 
 The parser requires a JSON configuration defining which electrodes should be included.
+The JSON must map electrode names (e.g. "BIA", "HA", "TP") to a dictionary containing at least the key "type" (e.g. "eeg", "seeg"). Channel names in the recording are matched by searching for these electrode bases followed by a numeric contact index (e.g. "BIA1", "HA5") within the raw channel names.
 
 Example:
 
 ```json
 {
-    "FO"  : {"type": "seeg", "area": "broca"},
-    "GSM" : {"type": "seeg", "area": "none"},
-    "WCP" : {"type": "seeg", "area": "wernicke"},
+    "BIA": {
+        "type": "seeg",
+        "name": "Broca Ínsula Anterior",
+        "area": "broca"
+    },
+    "TIA": {
+        "type": "seeg",
+        "name": "Temporal Ínsula Anterior",
+        "area": "wernicke"
+    }
 }
 ```
 
----
-
-## Bipolar referencing
-
-Bipolar referencing is computed automatically using adjacent contacts:
-
-```text
-A1-A2
-A2-A3
-A3-A4
-```
+An example `channels.json` file is provided in the `examples` folder.
 
 ---
 
 ## Visualization
 
-```python
-from seeg_parser.inspectfile import bidsview
+To obtain information about a `.TRC` file:
 
-bidsview("bids_root", "patient01")
+```python
+from seeg_parser.inspection import trcinfo
+
+trcinfo("EEG_0001.TRC")
 ```
 
----
+To visualize the BIDS output:
 
-## Notes
+```python
+from seeg_parser.inspection import bidsview
 
-This package was developed primarily for stimulation recordings from Micromed systems and may require adaptation for other acquisition setups.
+bidsview("bids_root", "sub-01")
+```
 
 ---
 
