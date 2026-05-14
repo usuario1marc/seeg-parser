@@ -54,9 +54,9 @@ In the case of the patient in storage 79, we got the following Patient ID:
 
 ### Step 5: Open the server where the files are stored
 
-For this next step, you will need the password or administration permissions to open the directory where the patient's data is stored. In our case, the directory can be accessed by creating a Direct Access link to the following IP address:
+For this next step, you will need the password or administration permissions to open the directory where the patient's data is stored. In our case, the directory can be accessed by creating a Direct Access link:
 
-![Direct Access to IP 172.21.31.44](images/10.png)
+![Direct Access to IP X.31.44](images/10.png)
 
 ### Step 6: Go to the patient's folder
 
