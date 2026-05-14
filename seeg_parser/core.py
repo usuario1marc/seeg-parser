@@ -90,7 +90,7 @@ def trc2bids(
     # ----- PART 1. Channels and data -----
 
     # Open JSON with channel list
-    with open(channels_filepath, 'r') as file:
+    with open(channels_filepath, 'r', encoding="utf-8") as file:
         included_channels = json.load(file)
 
     # Read .TRC file using wonambi's Micromed reader

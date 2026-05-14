@@ -18,7 +18,7 @@ from seeg_parser import trc2bids, inspection
 root = Path(r"D:\SJD")
 trc_dir = root / "TRC"
 bids_dir = root / "BIDS"
-channels_config = "channels.json"
+channels_config = r"example/channels.json"
 
 # =========================================================
 # MAIN LOOP
@@ -26,12 +26,12 @@ channels_config = "channels.json"
 
 for patient_dir in trc_dir.iterdir():
     if patient_dir.is_dir():
-
+        patient_id = patient_dir.name
         print(f"\nConverting patient: {patient_id}")
+        
         for i, trc_file in enumerate(patient_dir.glob("*.TRC")):
-            patient_id = patient_dir.name
             run = str(i+1).zfill(2)
-            
             print(f"\nConverting run: {run}\n")
+            
             inspection.trcinfo(trc_file)
             trc2bids(trc_file, bids_dir, channels_config, patient_id, "cceps", session="01", run=run, reference="monopolar")

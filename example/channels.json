@@ -4,10 +4,15 @@
         "name": "Amígdala",
         "area": "wernicke"
     },
+    "AI": {
+        "type": "seeg",
+        "name": "Amígdala e Ínsula Antero-Inferior",
+        "area": "wernicke"
+    },
     "AL": {
         "type": "seeg",
         "name": "Anterior Lesión",
-        "area": "wernicke"
+        "area": "none"
     },
     "AMP": {
         "type": "seeg",
@@ -24,14 +29,69 @@
         "name": "Broca Ínsula Anterior",
         "area": "broca"
     },
+    "CMP": {
+        "type": "seeg",
+        "name": "Cíngulo Medio Posterior",
+        "area": "none"
+    },
+    "FCA": {
+        "type": "seeg",
+        "name": "Frontal Lateral Cíngulo Anterior",
+        "area": "broca"
+    },
+    "FCM": {
+        "type": "seeg",
+        "name": "Frontal Lateral Cíngulo Medio",
+        "area": "broca"
+    },
+    "FIA": {
+        "type": "seeg",
+        "name": "Frontal Superior Anterior a Ínsula Anterior",
+        "area": "broca"
+    },
+    "FIM": {
+        "type": "seeg",
+        "name": "Frontal Superior Medio a Ínsula Media",
+        "area": "none"
+    },
+    "FIP": {
+        "type": "seeg",
+        "name": "Frontal Superior Posterior a Ínsula Posterior",
+        "area": "none"
+    },
+    "FM": {
+        "type": "seeg",
+        "name": "Frontal Mesial",
+        "area": "none"
+    },
     "FO": {
         "type": "seeg",
         "name": "Fronto Orbitario",
         "area": "broca"
     },
+    "FOA": {
+        "type": "seeg",
+        "name": "Fronto Orbitario Anterior",
+        "area": "broca"
+    },
+    "FOP": {
+        "type": "seeg",
+        "name": "Fronto Orbitario Posterior",
+        "area": "broca"
+    },
+    "FP": {
+        "type": "seeg",
+        "name": "Fronto Polar",
+        "area": "broca"
+    },
     "GAC": {
         "type": "seeg",
         "name": "Giro Anterior a Cíngulo",
+        "area": "none"
+    },
+    "GSC": {
+        "type": "seeg",
+        "name": "Giro Supra Cingular",
         "area": "none"
     },
     "GSM": {
@@ -64,9 +124,19 @@
         "name": "Ínsula Anterior Oblicuo",
         "area": "broca"
     },
+    "IMAO": {
+        "type": "seeg",
+        "name": "Ínsula Media Anterior Oblicuo",
+        "area": "broca"
+    },
     "IMO": {
         "type": "seeg",
         "name": "Ínsula Medial Oblicuo",
+        "area": "broca"
+    },
+    "IMPO": {
+        "type": "seeg",
+        "name": "Ínsula Media Posterior Oblicuo",
         "area": "broca"
     },
     "IPO": {
@@ -74,10 +144,55 @@
         "name": "Ínsula Posterior Oblicuo",
         "area": "broca"
     },
+    "LA": {
+        "type": "seeg",
+        "name": "Lesional Anterior",
+        "area": "none"
+    },
+    "LI": {
+        "type": "seeg",
+        "name": "Lesional Inferior",
+        "area": "none"
+    },
     "LIP": {
         "type": "seeg",
         "name": "Lesión Ínsula Posterior",
         "area": "broca"
+    },
+    "LM": {
+        "type": "seeg",
+        "name": "Lesional Medial",
+        "area": "none"
+    },
+    "LP": {
+        "type": "seeg",
+        "name": "Lesional Posterior",
+        "area": "none"
+    },
+    "LS": {
+        "type": "seeg",
+        "name": "Lesional Superior",
+        "area": "none"
+    },
+    "MP": {
+        "type": "seeg",
+        "name": "Motora Primaria",
+        "area": "none"
+    },
+    "OA": {
+        "type": "seeg",
+        "name": "Opérculo Anterior",
+        "area": "none"
+    },
+    "OAO": {
+        "type": "seeg",
+        "name": "Giro Orbitario Medial Anterior Oblicuo",
+        "area": "broca"
+    },
+    "OCM": {
+        "type": "seeg",
+        "name": "Opérculo Cíngulo Medio",
+        "area": "none"
     },
     "OIM": {
         "type": "seeg",
@@ -89,10 +204,30 @@
         "name": "Opérculo Ínsula Posterior",
         "area": "broca"
     },
+    "OPI": {
+        "type": "seeg",
+        "name": "Opérculo Parietal Ínsula Posterior",
+        "area": "broca"
+    },
     "OIS": {
         "type": "seeg",
         "name": "Opérculo Ínsula Superior",
         "area": "broca"
+    },
+    "OPO": {
+        "type": "seeg",
+        "name": "Giro Orbitario Medial Posterior Oblicuo",
+        "area": "broca"
+    },
+    "P": {
+        "type": "seeg",
+        "name": "Parietal",
+        "area": "none"
+    },
+    "PC": {
+        "type": "seeg",
+        "name": "Pre-Central",
+        "area": "none"
     },
     "PS": {
         "type": "seeg",
@@ -103,6 +238,21 @@
         "type": "seeg",
         "name": "Polo Temporal",
         "area": "wernicke"
+    },
+    "RAO": {
+        "type": "seeg",
+        "name": "Giro Recto Anterior Oblicuo",
+        "area": "broca"
+    },
+    "RPO": {
+        "type": "seeg",
+        "name": "Giro Recto Posterior Cíngulo Anterior Oblicuo",
+        "area": "broca"
+    },
+    "SPG": {
+        "type": "seeg",
+        "name": "Giro Supra Marginal",
+        "area": "none"
     },
     "SIM": {
         "type": "seeg",
@@ -157,6 +307,11 @@
     "TIP": {
         "type": "seeg",
         "name": "Temporal Ínsula Posterior",
+        "area": "wernicke"
+    },
+    "TO": {
+        "type": "seeg",
+        "name": "Temporo Occipital",
         "area": "wernicke"
     },
     "TOB": {

@@ -1,22 +1,26 @@
 # seeg-parser
-Python module for parsing stereotactic electroencephalography (SEEG) recordings from equipment-specific formats to universal formats. Used for a project in Hospital Sant Joan de Déu in Barcelona.
-
-Built around:
-- MNE
-- MNE-BIDS
-- Wonambi
+Python module for parsing stereotactic electroencephalography (SEEG) recordings from equipment-specific formats to universal formats. Used for a project in Hospital Sant Joan de Déu in Barcelona. 
 
 ## Features
 
 - Parse Micromed `.TRC` recordings
 - Export recordings to BIDS iEEG structure
-- Automatic stimulation event extraction
 - Monopolar and bipolar referencing
 - Interactive visualization helpers
+
+## Useful links and tutorials
+
+- [How to extract .TRC files from MICROMED's BrainQuick program](docs/TUTORIAL.md)
+- [iEEG Brain Imaging Data Structure](https://bids-specification.readthedocs.io/en/stable/modality-specific-files/intracranial-electroencephalography.html)
 
 ## Notes
 
 This package was developed primarily for stimulation recordings from Micromed systems and may require adaptation for other acquisition setups.
+
+Built around:
+- MNE
+- MNE-BIDS
+- Wonambi
 
 ---
 
@@ -28,8 +32,6 @@ cd seeg-parser
 
 python -m pip install -e .
 ```
-
----
 
 ## Basic usage
 
@@ -54,8 +56,6 @@ Inside each patient folder, there should be the raw `.TRC` files.
 The script iterates through all patient folders and through all `.TRC` files inside each folder, parsing them and adding them
 to the provided output BIDS dataset.
 
----
-
 ## Channel configuration
 
 The parser requires a JSON configuration defining which electrodes should be included.
@@ -79,8 +79,6 @@ Example:
 ```
 
 An example `channels.json` file is provided in the `examples` folder.
-
----
 
 ## Visualization
 
